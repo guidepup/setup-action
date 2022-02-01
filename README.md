@@ -11,7 +11,8 @@
 Just add this step before any of your steps that use Guidepup.
 
 ```yaml
-- uses guidepup/setup-action
+- name: Setup Environment
+  uses: guidepup/setup-action
 ```
 
 ## See Also 🐶
