@@ -1,0 +1,9 @@
+name: "Guidepup Setup"
+description: "Setup your environment for screen-reader automation."
+author: "Craig Morten"
+branding:
+  icon: "check-circle"
+  color: "gray-dark"
+runs:
+  using: "node16"
+  main: "index.js"
