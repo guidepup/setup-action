@@ -16,10 +16,10 @@
   dependencies:
     tunnel "0.0.6"
 
-"@guidepup/setup@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.3.0.tgz#e68f88c79ed295f8971b9c23841f63da44cf86e7"
-  integrity sha512-hrWMGwXhUWB7s+EtU/X3wqnpDta36eonyGAxDhfJ7JYDJss6Nm4w2g52hlI7DgjF0AswU+jN6sHoiRvCgoh/Mw==
+"@guidepup/setup@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.3.1.tgz#33c2506faec4c029a2bc1513858f28a26b0da2f2"
+  integrity sha512-ytXAsY/SsQ91rtcaKPHbaYjPmLR6YpAQHD1U74oP78RBUpjH6Asrk54Hiy6Qq36BhlpNncAMM/G16Fs9SL47bQ==
   dependencies:
     chalk "^4.0.0"
     inquirer "^8.2.0"
