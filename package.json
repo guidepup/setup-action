@@ -20,7 +20,7 @@
     "voiceover"
   ],
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.9.1",
     "@guidepup/setup": "^0.3.1"
   }
 }
