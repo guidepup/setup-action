@@ -3,12 +3,6 @@
  * `rawlist` type prompt
  */
 
-const _ = {
-  uniq: require('lodash/uniq'),
-  isString: require('lodash/isString'),
-  isNumber: require('lodash/isNumber'),
-  findIndex: require('lodash/findIndex'),
-};
 const chalk = require('chalk');
 const { map, takeUntil } = require('rxjs/operators');
 const Base = require('./base');
@@ -221,7 +215,7 @@ class ExpandPrompt extends Base {
     if (errors.length) {
       throw new Error(
         'Duplicate key error: `key` param must be unique. Duplicates: ' +
-          _.uniq(errors).join(', ')
+          [...new Set(errors)].join(',')
       );
     }
   }
@@ -234,13 +228,10 @@ class ExpandPrompt extends Base {
    */
   generateChoicesString(choices, defaultChoice) {
     let defIndex = choices.realLength - 1;
-    if (_.isNumber(defaultChoice) && this.opt.choices.getChoice(defaultChoice)) {
+    if (typeof defaultChoice === 'number' && this.opt.choices.getChoice(defaultChoice)) {
       defIndex = defaultChoice;
-    } else if (_.isString(defaultChoice)) {
-      const index = _.findIndex(
-        choices.realChoices,
-        ({ value }) => value === defaultChoice
-      );
+    } else if (typeof defaultChoice === 'string') {
+      const index = choices.realChoices.findIndex(({ value }) => value === defaultChoice);
       defIndex = index === -1 ? defIndex : index;
     }
 

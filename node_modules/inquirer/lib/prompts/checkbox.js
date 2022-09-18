@@ -3,11 +3,6 @@
  * `list` type prompt
  */
 
-const _ = {
-  isArray: require('lodash/isArray'),
-  map: require('lodash/map'),
-  isString: require('lodash/isString'),
-};
 const chalk = require('chalk');
 const cliCursor = require('cli-cursor');
 const figures = require('figures');
@@ -25,7 +20,7 @@ class CheckboxPrompt extends Base {
       this.throwParamError('choices');
     }
 
-    if (_.isArray(this.opt.default)) {
+    if (Array.isArray(this.opt.default)) {
       this.opt.choices.forEach(function (choice) {
         if (this.opt.default.indexOf(choice.value) >= 0) {
           choice.checked = true;
@@ -169,8 +164,8 @@ class CheckboxPrompt extends Base {
       (choice) => Boolean(choice.checked) && !choice.disabled
     );
 
-    this.selection = _.map(choices, 'short');
-    return _.map(choices, 'value');
+    this.selection = choices.map((choice) => choice.short);
+    return choices.map((choice) => choice.value);
   }
 
   onUpKey() {
@@ -249,7 +244,9 @@ function renderChoices(choices, pointer) {
     if (choice.disabled) {
       separatorOffset++;
       output += ' - ' + choice.name;
-      output += ' (' + (_.isString(choice.disabled) ? choice.disabled : 'Disabled') + ')';
+      output += ` (${
+        typeof choice.disabled === 'string' ? choice.disabled : 'Disabled'
+      })`;
     } else {
       const line = getCheckbox(choice.checked) + ' ' + choice.name;
       if (i - separatorOffset === pointer) {
