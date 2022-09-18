@@ -8,12 +8,19 @@
 
 ## Usage 🦮
 
-Just add this step before any of your steps that use Guidepup.
+Just add this step before to enable steps that use screen-reader automation in GitHub CI:
 
 ```yaml
 - name: Setup Environment
   uses: guidepup/setup-action
 ```
+
+## Supports
+
+- [Guidepup](https://github.com/guidepup/guidepup/)
+- [Auto-VO](https://www.npmjs.com/package/@accesslint/auto-vo)
+- [VoiceOver.js](https://www.npmjs.com/package/@accesslint/voiceover)
+- [web-test-runner-voiceover](https://www.npmjs.com/package/web-test-runner-voiceover)
 
 ## See Also 🐶
 
