@@ -4,6 +4,15 @@ author: "Craig Morten"
 branding:
   icon: "check-circle"
   color: "gray-dark"
+inputs:
+  resolutionWidth:
+    description: "Screen resolution width to use"
+    required: false
+    default: "1920"
+  resolutionHeight:
+    description: "Screen resolution height to use"
+    required: false
+    default: "1080"
 runs:
   using: "node16"
   main: "index.js"
