@@ -5,11 +5,5 @@ branding:
   icon: "check-circle"
   color: "gray-dark"
 runs:
-  using: "composite"
-  steps:
-    - shell: bash
-      run: |
-        sudo "/Library/Application Support/VMware Tools/vmware-resolutionSet" 1440 900
-        sleep 5
-    - shell: nodejs
-      run: "index.js"
+  using: "node16"
+  main: "index.js"
