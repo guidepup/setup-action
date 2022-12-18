@@ -29,10 +29,10 @@
   resolved "https://registry.yarnpkg.com/@actions/io/-/io-1.1.2.tgz#766ac09674a289ce0f1550ffe0a6eac9261a8ea9"
   integrity sha512-d+RwPlMp+2qmBfeLYPLXuSRykDIFEwdTA0MMxzS9kh4kvP1ftrc/9fzy6pX6qAjthdXruHQ6/6kjT/DNo5ALuw==
 
-"@guidepup/setup@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.6.0.tgz#45a916c37d68e2bb1cfb79442b6199c1f6ac8f63"
-  integrity sha512-rcph9yNk3owEJUXpX2VjNtNM0If9lLp7oU8P01tTDB04Xxd/fwaxjhfNorYaKjgD2XIXxbrlzwhG+v7+YJCuiQ==
+"@guidepup/setup@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.6.1.tgz#abceb5766a6c1e85cab87b776a933bd0819d1c4d"
+  integrity sha512-oBZLjTBzU1yx559v4hJTU4DqeePkwF2SBzVg/OSGEjrS3URjjWKCgx+g9kalEKxFh0IjJsIVvdlyfA/ri/FpIQ==
   dependencies:
     chalk "^4.0.0"
     decompress "^4.2.1"
