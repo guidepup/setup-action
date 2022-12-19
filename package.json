@@ -1,6 +1,6 @@
 {
   "name": "@guidepup/setup-action",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "GitHub Action to setup your environment for screen-reader automation.",
   "main": "index.js",
   "author": "Craig Morten <craig.morten@hotmail.co.uk>",
@@ -17,11 +17,12 @@
     "screen-reader",
     "accessibility",
     "a11y",
-    "voiceover"
+    "voiceover",
+    "nvda"
   ],
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/exec": "^1.1.1",
-    "@guidepup/setup": "^0.6.1"
+    "@guidepup/setup": "^0.6.3"
   }
 }
