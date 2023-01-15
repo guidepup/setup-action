@@ -6,7 +6,7 @@
   <a href="https://github.com/guidepup/setup-action/blob/main/LICENSE"><img alt="Guidepup Setup Action uses the MIT license" src="https://img.shields.io/github/license/guidepup/setup-action" /></a>
 </p>
 
-## Usage 🦮
+## Usage
 
 Just add this step before to enable steps that use screen-reader automation in GitHub CI:
 
@@ -22,7 +22,7 @@ Just add this step before to enable steps that use screen-reader automation in G
 - [VoiceOver.js](https://www.npmjs.com/package/@accesslint/voiceover)
 - [web-test-runner-voiceover](https://www.npmjs.com/package/web-test-runner-voiceover)
 
-## See Also 🐶
+## See Also
 
 Check out some of the Guidepup modules:
 
@@ -30,6 +30,6 @@ Check out some of the Guidepup modules:
 - [`@guidepup/setup`](https://github.com/guidepup/setup/)
 - [`@guidepup/playwright`](https://github.com/guidepup/guidepup-playwright/)
 
-## License 🐩
+## License
 
 [MIT](https://github.com/guidepup/guidepup/blob/main/LICENSE)
