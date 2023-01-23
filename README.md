@@ -1,6 +1,6 @@
 <h1 align="center">Guidepup Setup Action</h1>
 <p align="center">
-  <i>GitHub Action to setup your environment for screen-reader automation.</i>
+  <i>GitHub Action to setup your environment for screen reader test automation.</i>
 </p>
 <p align="center">
   <a href="https://github.com/guidepup/setup-action/blob/main/LICENSE"><img alt="Guidepup Setup Action uses the MIT license" src="https://img.shields.io/github/license/guidepup/setup-action" /></a>
@@ -8,7 +8,7 @@
 
 ## Usage
 
-Just add this step before to enable steps that use screen-reader automation in GitHub CI:
+Just add this step before to enable steps that use screen reader test automation in GitHub CI:
 
 ```yaml
 - name: Setup Environment
