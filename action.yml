@@ -1,18 +1,22 @@
 name: "Guidepup Setup"
-description: "Setup your environment for screen-reader automation."
+description: "Setup your environment for screen reader test automation."
 author: "Craig Morten"
 branding:
   icon: "check-circle"
   color: "gray-dark"
 inputs:
   resolutionWidth:
-    description: "Screen resolution width to use"
+    description: "Screen resolution width to use. macos agents only."
     required: false
     default: "1920"
   resolutionHeight:
-    description: "Screen resolution height to use"
+    description: "Screen resolution height to use. macos agents only."
     required: false
     default: "1080"
+  record:
+    description: "Whether to screen-record the setup flow and save to a './recordings/' folder in the current working directory. macos agents only."
+    required: false
+    default: false
 runs:
-  using: "node16"
+  using: "node18"
   main: "index.js"
