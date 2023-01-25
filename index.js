@@ -11,9 +11,19 @@ async function main() {
       const width = core.getInput("resolutionWidth") || "1920";
       const height = core.getInput("resolutionHeight") || "1080";
 
-      await exec.exec(
-        `"/Library/Application Support/VMware Tools/vmware-resolutionSet" ${width} ${height}`
-      );
+      try {
+        await exec.exec(
+          `"/Library/Application Support/VMware Tools/vmware-resolutionSet" ${width} ${height}`
+        );
+      } catch {
+        // swallow
+      }
+
+      const record = core.getInput("record") || false;
+
+      if (record) {
+        process.argv.push("--record");
+      }
     }
 
     // Run generic screenreader setup
