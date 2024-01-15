@@ -26,7 +26,16 @@ async function main() {
       }
     }
 
-    // Run generic screenreader setup
+    if (os.platform === "win32") {
+      const nvdaInstallDirectory = core.getInput("nvdaInstallDir") ?? null;
+
+      if (nvdaInstallDirectory) {
+        process.argv.push("--nvda-install-dir");
+        process.argv.push(nvdaInstallDirectory);
+      }
+    }
+
+    // Run generic screen reader setup
     process.argv.push("--ci");
     require("@guidepup/setup");
   } catch (err) {

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ERR_APPLE_SCRIPT_TIMED_OUT = exports.ERR_WAITING_TIMEOUT = exports.DEFAULT_CLICK_COUNT = exports.DEFAULT_CLICK_BUTTON = exports.DEFAULT_MAX_BUFFER = exports.DEFAULT_TIMEOUT = exports.DEFAULT_POLL_INTERVAL = exports.DEFAULT_MUTATING_ACTION_RETRY_COUNT = exports.DEFAULT_RETRY_COUNT = void 0;
+exports.DEFAULT_RETRY_COUNT = 3;
+exports.DEFAULT_MUTATING_ACTION_RETRY_COUNT = 1;
+exports.DEFAULT_POLL_INTERVAL = 1000;
+exports.DEFAULT_TIMEOUT = 10000;
+exports.DEFAULT_MAX_BUFFER = 1000 * 1000 * 100;
+exports.DEFAULT_CLICK_BUTTON = "left";
+exports.DEFAULT_CLICK_COUNT = 1;
+exports.ERR_WAITING_TIMEOUT = "Timed out waiting.";
+exports.ERR_APPLE_SCRIPT_TIMED_OUT = "AppleEvent timed out";

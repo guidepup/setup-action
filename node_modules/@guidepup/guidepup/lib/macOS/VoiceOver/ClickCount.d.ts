@@ -1,0 +1,5 @@
+export declare enum ClickCount {
+    Once = "once",
+    Twice = "twice",
+    Thrice = "thrice"
+}

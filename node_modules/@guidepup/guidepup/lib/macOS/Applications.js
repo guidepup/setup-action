@@ -1,0 +1,50 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Applications = void 0;
+/**
+ * Default applications available on MacOS.
+ */
+var Applications;
+(function (Applications) {
+    Applications["AppleScriptUtility"] = "AppleScript Utility";
+    Applications["AutomatorApplicationStub"] = "Automator Application Stub";
+    Applications["Automator"] = "Automator";
+    Applications["BluetoothFileExchange"] = "Bluetooth File Exchange";
+    Applications["Calendar"] = "Calendar";
+    Applications["Console"] = "Console";
+    Applications["Contacts"] = "Contacts";
+    Applications["DatabaseEvents"] = "Database Events";
+    Applications["DigitalHubScripting"] = "Digital Hub Scripting";
+    Applications["Finder"] = "Finder";
+    Applications["FolderActionsSetup"] = "Folder Actions Setup";
+    Applications["FolderActionsDispatcher"] = "FolderActionsDispatcher";
+    Applications["FontBook"] = "Font Book";
+    Applications["GarageBand"] = "GarageBand";
+    Applications["ImageEvents"] = "Image Events";
+    Applications["IMovie"] = "iMovie";
+    Applications["KeyboardAccessAgent"] = "KeyboardAccessAgent";
+    Applications["Keynote"] = "Keynote";
+    Applications["Mail"] = "Mail";
+    Applications["Messages"] = "Messages";
+    Applications["Music"] = "Music";
+    Applications["Notes"] = "Notes";
+    Applications["Numbers"] = "Numbers";
+    Applications["Pages"] = "Pages";
+    Applications["PhotoLibraryMigrationUtility"] = "Photo Library Migration Utility";
+    Applications["Photos"] = "Photos";
+    Applications["Preview"] = "Preview";
+    Applications["QuickTimePlayer"] = "QuickTime Player";
+    Applications["Reminders"] = "Reminders";
+    Applications["Safari"] = "Safari";
+    Applications["ScreenSharing"] = "Screen Sharing";
+    Applications["ScriptEditor"] = "Script Editor";
+    Applications["ShortcutEvents"] = "Shortcuts Events";
+    Applications["Shortcuts"] = "Shortcuts";
+    Applications["SystemEvents"] = "System Events";
+    Applications["SystemInformation"] = "System Information";
+    Applications["SystemPreferences"] = "System Preferences";
+    Applications["Terminal"] = "Terminal";
+    Applications["textEdit"] = "Text Edit";
+    Applications["Tv"] = "TV";
+    Applications["VoiceOver"] = "VoiceOver";
+})(Applications || (exports.Applications = Applications = {}));

@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ERR_SEND_KEYS = exports.ERR_NVDA_RUNNING_TIMEOUT = exports.ERR_NVDA_QUIT = exports.ERR_NVDA_CANNOT_CONNECT = exports.ERR_NVDA_CANNOT_BE_STARTED = exports.ERR_NVDA_NOT_RUNNING = exports.ERR_NVDA_ALREADY_RUNNING = exports.ERR_NVDA_NOT_SUPPORTED = exports.ERR_NVDA_NOT_INSTALLED = exports.ERR_WINDOWS_UNABLE_TO_ACCESS_REGISTRY = void 0;
+exports.ERR_WINDOWS_UNABLE_TO_ACCESS_REGISTRY = "Unable to access Windows registry";
+exports.ERR_NVDA_NOT_INSTALLED = "NVDA not installed";
+exports.ERR_NVDA_NOT_SUPPORTED = "NVDA not supported";
+exports.ERR_NVDA_ALREADY_RUNNING = "NVDA already running";
+exports.ERR_NVDA_NOT_RUNNING = "NVDA not running";
+exports.ERR_NVDA_CANNOT_BE_STARTED = "NVDA cannot be started";
+exports.ERR_NVDA_CANNOT_CONNECT = "Cannot connect to NVDA";
+exports.ERR_NVDA_QUIT = "NVDA cannot be quit";
+exports.ERR_NVDA_RUNNING_TIMEOUT = "Timed out waiting for NVDA to be running";
+exports.ERR_SEND_KEYS = "Unable to send keys";

@@ -17,6 +17,10 @@ inputs:
     description: "Whether to screen-record the setup flow and save to a './recordings/' folder in the current working directory. macos agents only."
     required: false
     default: false
+  nvdaInstallDir:
+    description: "Specify a custom location for where to install NVDA. Default is to install to a temporary directory. windows agents only."
+    required: false
+    default: ""
 runs:
   using: "node16"
   main: "index.js"

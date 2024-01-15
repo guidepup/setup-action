@@ -1,0 +1,211 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CommanderCommands = void 0;
+/**
+ * VoiceOver Commander commands.
+ *
+ * Reference: {@link https://support.apple.com/en-gb/guide/voiceover/cpvoukbcmdr/mac}
+ */
+var CommanderCommands;
+(function (CommanderCommands) {
+    // General Commands
+    CommanderCommands["ACTIONS"] = "actions";
+    CommanderCommands["ADD_PRONUNCIATION"] = "add pronunciation";
+    CommanderCommands["BRING_WINDOW_TO_FRONT"] = "bring window to front";
+    CommanderCommands["CLICK_MOUSE"] = "click mouse";
+    CommanderCommands["CLOSE_WINDOW"] = "close window";
+    CommanderCommands["DESCRIBE_POSITION_OF_WINDOW"] = "describe position of window";
+    CommanderCommands["DESCRIBE_SIZE_OF_WINDOW"] = "describe size of window";
+    CommanderCommands["DOUBLE_CLICK_MOUSE"] = "double click mouse";
+    CommanderCommands["DROP_MARKED_ITEM_AFTER_CHOSEN_HOT_SPOT"] = "drop marked item after chosen hot spot";
+    CommanderCommands["DROP_MARKED_ITEM_AFTER_VOICEOVER_CURSOR"] = "drop marked item after voiceover cursor";
+    CommanderCommands["DROP_MARKED_ITEM_BEFORE_CHOSEN_HOT_SPOT"] = "drop marked item before chosen hot spot";
+    CommanderCommands["DROP_MARKED_ITEM_BEFORE_VOICEOVER_CURSOR"] = "drop marked item before voiceover cursor";
+    CommanderCommands["DROP_MARKED_ITEM_ON_CHOSEN_HOT_SPOT"] = "drop marked item on chosen hot spot";
+    CommanderCommands["DROP_MARKED_ITEM_ON_VOICEOVER_CURSOR"] = "drop marked item on voiceover cursor";
+    CommanderCommands["ESCAPE"] = "escape";
+    CommanderCommands["FAST_FORWARD"] = "fast-forward";
+    CommanderCommands["IGNORE_NEXT_KEYPRESS"] = "ignore next keypress";
+    CommanderCommands["INTERACT_WITH_SCROLL_BAR"] = "interact with scroll bar";
+    CommanderCommands["ITEM_CHOOSER"] = "item chooser";
+    CommanderCommands["KEYBOARD_HELP"] = "keyboard help";
+    CommanderCommands["LABEL_ITEM"] = "label item";
+    CommanderCommands["MAGIC_TAP"] = "magic tap";
+    CommanderCommands["MARK_ITEM_TO_DRAG_AND_DROP"] = "mark item to drag and drop";
+    CommanderCommands["MORE_CONTENT"] = "more content";
+    CommanderCommands["MOUSE_DOWN"] = "mouse down";
+    CommanderCommands["MOUSE_UP"] = "mouse up";
+    CommanderCommands["MOVE_DOWN"] = "move down";
+    CommanderCommands["MOVE_LEFT"] = "move left";
+    CommanderCommands["MOVE_RIGHT"] = "move right";
+    CommanderCommands["MOVE_UP"] = "move up";
+    CommanderCommands["OPEN_ACTIVITY_CHOOSER"] = "open activity chooser";
+    CommanderCommands["OPEN_APPLICATION_CHOOSER"] = "open application chooser";
+    CommanderCommands["OPEN_COMMANDS_MENU"] = "open commands menu";
+    CommanderCommands["OPEN_CONTROL_CENTER"] = "open control center";
+    CommanderCommands["OPEN_NEXT_SPEECH_ATTRIBUTE_GUIDE"] = "open next speech attribute guide";
+    CommanderCommands["OPEN_NOTIFICATION_CENTRE"] = "open notification centre";
+    CommanderCommands["OPEN_PREVIOUS_SPEECH_ATTRIBUTE_GUIDE"] = "open previous speech attribute guide";
+    CommanderCommands["OPEN_QUICK_START_TUTORIAL"] = "open quick start tutorial";
+    CommanderCommands["OPEN_SHORTCUT_MENU"] = "open shortcut menu";
+    CommanderCommands["OPEN_THE_ANNOUNCEMENT_HISTORY_MENU"] = "open the announcement history menu";
+    CommanderCommands["OPEN_THE_NOTIFICATIONS_MENU"] = "open the notifications menu";
+    CommanderCommands["OPEN_VERBOSITY_ROTOR"] = "open verbosity rotor";
+    CommanderCommands["OPEN_VOICEOVER_HELP_MENU"] = "open voiceover help menu";
+    CommanderCommands["OPEN_VOICEOVER_UTILITY"] = "open voiceover utility";
+    CommanderCommands["OPEN_WINDOW_CHOOSER"] = "open window chooser";
+    CommanderCommands["PAUSE_OR_RESUME_SPEAKING"] = "pause or resume speaking";
+    CommanderCommands["PERFORM_ACTION_FOR_ITEM"] = "perform action for item";
+    CommanderCommands["PREVIOUS_ACTIVITY"] = "previous activity";
+    CommanderCommands["READ_CONTENTS_OF_VOICEOVER_CURSOR"] = "read contents of voiceover cursor";
+    CommanderCommands["READ_CONTENTS_OF_WINDOW"] = "read contents of window";
+    CommanderCommands["READ_CURRENT_ITEM_ALPHABETICALLY"] = "read current item alphabetically";
+    CommanderCommands["READ_CURRENT_ITEM_PHONETICALLY"] = "read current item phonetically";
+    CommanderCommands["READ_HELP_TAG_FOR_ITEM"] = "read help tag for item";
+    CommanderCommands["READ_IMAGE_DESCRIPTION_FOR_ITEM"] = "read image description for item";
+    CommanderCommands["READ_SELECTED_TEXT_OR_ITEM"] = "read selected text or item";
+    CommanderCommands["READ_VISIBLE_TEXT"] = "read visible text";
+    CommanderCommands["READ_VOICEOVER_HINT"] = "read voiceover hint";
+    CommanderCommands["REMOVE_FROM_WINDOW_SPOTS"] = "remove from window spots";
+    CommanderCommands["REWIND"] = "rewind";
+    CommanderCommands["RIGHT_CLICK_MOUSE"] = "right click mouse";
+    CommanderCommands["ROTOR"] = "rotor";
+    CommanderCommands["SELECT_ITEM"] = "select item";
+    CommanderCommands["SELECT_NEXT_OPTION_DOWN_IN_SPEECH_ATTRIBUTE_GUIDE"] = "select next option down in speech attribute guide";
+    CommanderCommands["SELECT_NEXT_OPTION_UP_IN_SPEECH_ATTRIBUTE_GUIDE"] = "select next option up in speech attribute guide";
+    CommanderCommands["SET_AS_A_WINDOW_SPOT"] = "set as a window spot";
+    CommanderCommands["SET_THE_SWEET_SPOT"] = "set the sweet spot";
+    CommanderCommands["START_INTERACTING_WITH_ITEM"] = "start interacting with item";
+    CommanderCommands["STOP_INTERACTING_WITH_ITEM"] = "stop interacting with item";
+    CommanderCommands["TOGGLE_CURSOR_TRACKING_ON_OR_OFF"] = "toggle cursor tracking on or off";
+    CommanderCommands["TOGGLE_DISCLOSURE_TRIANGLE_OPEN_OR_CLOSED"] = "toggle disclosure triangle open or closed";
+    CommanderCommands["TOGGLE_KEYBOARD_COMMANDER_ON_OR_OFF"] = "toggle keyboard commander on or off";
+    CommanderCommands["TOGGLE_MULTIPLE_SELECTION_ON_OR_OFF"] = "toggle multiple selection on or off";
+    CommanderCommands["TOGGLE_NUMPAD_COMMANDER_ON_OR_OFF"] = "toggle numpad commander on or off";
+    CommanderCommands["TOGGLE_QUICK_NAV_ON_OR_OFF"] = "toggle quick nav on or off";
+    CommanderCommands["TOGGLE_SCREEN_CURTAIN_ON_OR_OFF"] = "toggle screen curtain on or off";
+    CommanderCommands["TOGGLE_SINGLE_KEY_QUICK_NAV_ON_OR_OFF"] = "toggle single-key quick nav on or off";
+    CommanderCommands["TOGGLE_THE_VO_MODIFIER_LOCK_ON_OR_OFF"] = "toggle the vo modifier lock on or off";
+    CommanderCommands["TOGGLE_TRACKPAD_COMMANDER_ON_OR_OFF"] = "toggle trackpad commander on or off";
+    CommanderCommands["USER_GUIDE"] = "user guide";
+    // Information Commands
+    CommanderCommands["DESCRIBE_ITEM_IN_MOUSE_POINTER"] = "describe item in mouse pointer";
+    CommanderCommands["DESCRIBE_ITEM_IN_VOICEOVER_CURSOR"] = "describe item in voiceover cursor";
+    CommanderCommands["DESCRIBE_ITEM_WITH_KEYBOARD_FOCUS"] = "describe item with keyboard focus";
+    CommanderCommands["DESCRIBE_MOUSE_POINTER_LOCATION_FROM_TOP_LEFT_OF_SCREEN"] = "describe mouse pointer location (from top left of screen)";
+    CommanderCommands["DESCRIBE_MOUSE_POINTER_LOCATION_FROM_TOP_LEFT_OF_WINDOW"] = "describe mouse pointer location (from top left of window)";
+    CommanderCommands["DESCRIBE_OPEN_APPLICATIONS"] = "describe open applications";
+    CommanderCommands["DESCRIBE_POSITION_OF_ITEM_IN_VOICEOVER_CURSOR"] = "describe position of item in voiceover cursor";
+    CommanderCommands["DESCRIBE_SIZE_OF_ITEM_IN_VOICEOVER_CURSOR"] = "describe size of item in voiceover cursor";
+    CommanderCommands["DESCRIBE_WINDOW"] = "describe window";
+    // Navigation Commands
+    CommanderCommands["GO_DOWN_ONE_PAGE"] = "go down one page";
+    CommanderCommands["GO_LEFT_A_BIT"] = "go left a bit";
+    CommanderCommands["GO_LEFT_ONE_PAGE"] = "go left one page";
+    CommanderCommands["GO_RIGHT_A_BIT"] = "go right a bit";
+    CommanderCommands["GO_RIGHT_ONE_PAGE"] = "go right one page";
+    CommanderCommands["GO_TO_BEGINNING"] = "go to beginning";
+    CommanderCommands["GO_TO_BOTTOM_OF_WINDOW"] = "go to bottom of window";
+    CommanderCommands["GO_TO_DESKTOP"] = "go to desktop";
+    CommanderCommands["GO_TO_DOCK"] = "go to dock";
+    CommanderCommands["GO_TO_END"] = "go to end";
+    CommanderCommands["GO_TO_LINKED_ITEM"] = "go to linked item";
+    CommanderCommands["GO_TO_MENU_BAR"] = "go to menu bar";
+    CommanderCommands["GO_TO_POP_UP_ITEM"] = "go to pop-up item";
+    CommanderCommands["GO_TO_STATUS_MENUS"] = "go to status menus";
+    CommanderCommands["GO_TO_TOP_OF_WINDOW"] = "go to top of window";
+    CommanderCommands["GO_TO_VISIBLE_BEGINNING"] = "go to visible beginning";
+    CommanderCommands["GO_TO_VISIBLE_END"] = "go to visible end";
+    CommanderCommands["GO_UP_ONE_PAGE"] = "go up one page";
+    CommanderCommands["MOVE_DOWN_IN_ROTOR"] = "move down in rotor";
+    CommanderCommands["MOVE_KEYBOARD_FOCUS_TO_VOICEOVER_CURSOR"] = "move keyboard focus to voiceover cursor";
+    CommanderCommands["MOVE_MOUSE_POINTER_TO_VOICEOVER_CURSOR"] = "move mouse pointer to voiceover cursor";
+    CommanderCommands["MOVE_TO_AREA_AFTER_SPLITTER"] = "move to area after splitter";
+    CommanderCommands["MOVE_TO_AREA_BEFORE_SPLITTER"] = "move to area before splitter";
+    CommanderCommands["MOVE_TO_NEXT_SECTION"] = "move to next section";
+    CommanderCommands["MOVE_TO_PREVIOUS_SECTION"] = "move to previous section";
+    CommanderCommands["MOVE_UP_IN_ROTOR"] = "move up in rotor";
+    CommanderCommands["MOVE_VOICEOVER_CURSOR_TO_KEYBOARD_FOCUS"] = "move voiceover cursor to keyboard focus";
+    CommanderCommands["MOVE_VOICEOVER_CURSOR_TO_MOUSE_POINTER"] = "move voiceover cursor to mouse pointer";
+    CommanderCommands["NEXT_CONTENT"] = "next content";
+    CommanderCommands["NEXT_ROTOR_ITEM"] = "next rotor item";
+    CommanderCommands["PREVIOUS_CONTENT"] = "previous content";
+    CommanderCommands["PREVIOUS_ROTO_ITEM"] = "previous rotor item";
+    CommanderCommands["ROTATE_LEFT"] = "rotate left";
+    CommanderCommands["ROTATE_RIGHT"] = "rotate right";
+    CommanderCommands["SCROLL_DOWN_ONE_PAGE"] = "scroll down one page";
+    CommanderCommands["SCROLL_LEFT_ONE_PAGE"] = "scroll left one page";
+    CommanderCommands["SCROLL_RIGHT_ONE_PAGE"] = "scroll right one page";
+    CommanderCommands["SCROLL_UP_ONE_PAGE"] = "scroll up one page";
+    CommanderCommands["SPEAK_CURRENT_PAGE_IN_SCROLL_AREA"] = "speak current page in scroll area";
+    CommanderCommands["SWITCH_WINDOW"] = "switch window";
+    CommanderCommands["TOGGLE_VOICEOVER_CURSOR_FOLLOWS_MOUSE_ON_OR_OFF"] = "toggle voiceover cursor follows mouse on or off";
+    // Text Commands
+    CommanderCommands["READ_CURRENT_CHARACTER"] = "read current character";
+    CommanderCommands["READ_CURRENT_CHARACTER_PHONETICALLY"] = "read current character phonetically";
+    CommanderCommands["READ_CURRENT_LINE"] = "read current line";
+    CommanderCommands["READ_CURRENT_PARAGRAPH"] = "read current paragraph";
+    CommanderCommands["READ_CURRENT_SENTENCE"] = "read current sentence";
+    CommanderCommands["READ_CURRENT_WORD"] = "read current word";
+    CommanderCommands["READ_CURRENT_WORD_ALPHABETICALLY"] = "read current word alphabetically";
+    CommanderCommands["READ_CURRENT_WORD_PHONETICALLY"] = "read current word phonetically";
+    CommanderCommands["READ_FROM_BEGINNING_TO_VOICEOVER_CURSOR"] = "read from beginning to voiceover cursor";
+    CommanderCommands["READ_NEXT_CHARACTER"] = "read next character";
+    CommanderCommands["READ_NEXT_LINE"] = "read next line";
+    CommanderCommands["READ_NEXT_PARAGRAPH"] = "read next paragraph";
+    CommanderCommands["READ_NEXT_SENTENCE"] = "read next sentence";
+    CommanderCommands["READ_NEXT_WORD"] = "read next word";
+    CommanderCommands["READ_PREVIOUS_CHARACTER"] = "read previous character";
+    CommanderCommands["READ_PREVIOUS_LINE"] = "read previous line";
+    CommanderCommands["READ_PREVIOUS_PARAGRAPH"] = "read previous paragraph";
+    CommanderCommands["READ_PREVIOUS_SENTENCE"] = "read previous sentence";
+    CommanderCommands["READ_PREVIOUS_WORD"] = "read previous word";
+    CommanderCommands["READ_TEXT_ATTRIBUTES"] = "read text attributes";
+    CommanderCommands["SELECT_ALL"] = "select all";
+    CommanderCommands["SELECT_LEFT_OF_THE_CURSOR"] = "select left of the cursor";
+    CommanderCommands["SELECT_RIGHT_OF_THE_CURSOR"] = "select right of the cursor";
+    CommanderCommands["SELECT_TEXT"] = "select text";
+    CommanderCommands["SELECT_TEXT_IN_VOICEOVER_CURSOR"] = "select text in voiceover cursor";
+    CommanderCommands["TOGGLE_TEXT_SPOKEN_ALL_OR_MOST_RECENT"] = "toggle text spoken all or most recent";
+    CommanderCommands["UNSELECT_TEXT"] = "unselect text";
+    // Web Commands
+    CommanderCommands["ALWAYS_ALLOW_KEYBOARD_COMMANDS_TO_NAVIGATE_WEBSITES"] = "always allow keyboard commands to navigate websites";
+    CommanderCommands["FIND_NEXT_AUTO_WEB_SPOT"] = "find next auto web spot";
+    CommanderCommands["FIND_NEXT_BUTTON"] = "find next button";
+    CommanderCommands["FIND_NEXT_COLUMN"] = "find next column";
+    CommanderCommands["FIND_NEXT_FRAME"] = "find next frame";
+    CommanderCommands["FIND_NEXT_LANDMARK"] = "find next landmark";
+    CommanderCommands["FIND_NEXT_LIVE_REGION"] = "find next region";
+    CommanderCommands["FIND_NEXT_RADIO_GROUP"] = "find next group";
+    CommanderCommands["FIND_NEXT_TEXT_FIELD"] = "find next field";
+    CommanderCommands["FIND_NEXT_TICKBOX"] = "find next tickbox";
+    CommanderCommands["FIND_NEXT_WEB_SPOT"] = "find next web spot";
+    CommanderCommands["FIND_PREVIOUS_"] = "find previous auto web spot";
+    CommanderCommands["FIND_PREVIOUS_BUTTON"] = "find previous button";
+    CommanderCommands["FIND_PREVIOUS_COLUMN"] = "find previous column";
+    CommanderCommands["FIND_PREVIOUS_FRAME"] = "find previous frame";
+    CommanderCommands["FIND_PREVIOUS_LANDMARK"] = "find previous landmark";
+    CommanderCommands["FIND_PREVIOUS_REGION"] = "find previous region";
+    CommanderCommands["FIND_PREVIOUS_GROUP"] = "find previous group";
+    CommanderCommands["FIND_PREVIOUS_FIELD"] = "find previous field";
+    CommanderCommands["FIND_PREVIOUS_TICKBOX"] = "find previous tickbox";
+    CommanderCommands["FIND_PREVIOUS_WEB_SPOT"] = "find previous web spot";
+    CommanderCommands["READ_LINK_ADDRESS"] = "read link address";
+    CommanderCommands["READ_WEB_PAGE_STATISTICS"] = "read web page statistics";
+    CommanderCommands["REMOVE_WEB_SPOT"] = "read web spot";
+    CommanderCommands["SET_WEB_SPOT"] = "set web spot";
+    CommanderCommands["TOGGLE_INSERTION_POINT_NAVIGATION"] = "toggle insertion point navigation";
+    CommanderCommands["TOGGLE_LIVE_REGION"] = "toggle live region";
+    CommanderCommands["TOGGLE_TABLE_INTERACTABILITY"] = "toggle table interactability";
+    CommanderCommands["TOGGLE_TABLE_ROW_AND_COLUMN_INDICES"] = "toggle table row and column indices";
+    CommanderCommands["TOGGLE_WEB_NAVIGATION_DOM_OR_GROUP"] = "toggle web navigation dom or group";
+    // TODO: Find Commands
+    // TODO: Tables Commands
+    // TODO: Size and Position Commands
+    // TODO: Audio Commands
+    // TODO: Braille Commands
+    // TODO: Visuals Commands
+    // TODO: Speech Commands
+    // TODO: Hot Spots Commands
+    // TODO: Custom Commands
+})(CommanderCommands || (exports.CommanderCommands = CommanderCommands = {}));
