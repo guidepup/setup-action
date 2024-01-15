@@ -30,7 +30,7 @@ Just add this step to your workflow(s) to enable steps that use screen reader au
 
 If you are encountering errors in CI for MacOS you can pass a `record` option which will output a screen-recording of the setup to a `./recordings/` directory:
 
-```console
+```yaml
 - name: Setup Environment
   uses: guidepup/setup-action
   with:
@@ -39,7 +39,7 @@ If you are encountering errors in CI for MacOS you can pass a `record` option wh
 
 There are also options to change the screen resolution:
 
-```console
+```yaml
 - name: Setup Environment
   uses: guidepup/setup-action
   with:
@@ -55,7 +55,7 @@ When running on windows a portable NVDA instance compatible with Guidepup will b
 
 If you want to specify the directory that NVDA is installed to you can pass a `nvdaInstallDir` option:
 
-```console
+```yaml
 - name: Setup Environment
   uses: guidepup/setup-action
   with:
