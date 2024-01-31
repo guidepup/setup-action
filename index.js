@@ -24,6 +24,12 @@ async function main() {
       if (record) {
         process.argv.push("--record");
       }
+
+      const ignoreTccDb = core.getInput("ignoreTccDb") || false;
+
+      if (ignoreTccDb) {
+        process.argv.push("--ignore-tcc-db");
+      }
     }
 
     if (os.platform === "win32") {
