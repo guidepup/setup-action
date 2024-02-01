@@ -27,6 +27,8 @@ async function main() {
 
       const ignoreTccDb = core.getInput("ignoreTccDb") || false;
 
+      console.log({ ignoreTccDb });
+
       if (ignoreTccDb) {
         process.argv.push("--ignore-tcc-db");
       }
@@ -43,6 +45,9 @@ async function main() {
 
     // Run generic screen reader setup
     process.argv.push("--ci");
+
+    console.log(process.argv);
+
     require("@guidepup/setup");
   } catch (err) {
     core.setFailed(err);
