@@ -21,13 +21,13 @@ async function main() {
 
       const record = core.getInput("record") || false;
 
-      if (record) {
+      if (record === "true") {
         process.argv.push("--record");
       }
 
       const ignoreTccDb = core.getInput("ignoreTccDb") || false;
 
-      if (ignoreTccDb) {
+      if (ignoreTccDb === "true") {
         process.argv.push("--ignore-tcc-db");
       }
     }
