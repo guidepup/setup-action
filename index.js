@@ -5,7 +5,7 @@ const exec = require("@actions/exec");
 
 async function main() {
   try {
-    if (os.platform === "darwin") {
+    if (os.platform() === "darwin") {
       // Fix for GitHub actions macos-11 screencapture not working
       // REF: https://github.com/actions/runner-images/issues/5960
       const width = core.getInput("resolutionWidth") || "1920";
@@ -32,7 +32,7 @@ async function main() {
       }
     }
 
-    if (os.platform === "win32") {
+    if (os.platform() === "win32") {
       const nvdaInstallDirectory = core.getInput("nvdaInstallDir") ?? null;
 
       if (nvdaInstallDirectory) {
@@ -43,6 +43,7 @@ async function main() {
 
     // Run generic screen reader setup
     process.argv.push("--ci");
+
     require("@guidepup/setup");
   } catch (err) {
     core.setFailed(err);
