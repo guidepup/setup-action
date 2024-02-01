@@ -5,8 +5,6 @@ const exec = require("@actions/exec");
 
 async function main() {
   try {
-    console.log(os.platform());
-
     if (os.platform() === "darwin") {
       // Fix for GitHub actions macos-11 screencapture not working
       // REF: https://github.com/actions/runner-images/issues/5960
@@ -29,8 +27,6 @@ async function main() {
 
       const ignoreTccDb = core.getInput("ignoreTccDb") || false;
 
-      console.log({ ignoreTccDb });
-
       if (ignoreTccDb) {
         process.argv.push("--ignore-tcc-db");
       }
@@ -47,8 +43,6 @@ async function main() {
 
     // Run generic screen reader setup
     process.argv.push("--ci");
-
-    console.log(process.argv);
 
     require("@guidepup/setup");
   } catch (err) {
