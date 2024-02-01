@@ -62,7 +62,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-2019, windows-2022]
-        nvdaInstallDir: ["", \%userprofile\%\\nvda]
+        nvdaInstallDir: ["", "D:\\a\\setup-action\\setup-action\\nvda"]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -72,4 +72,4 @@ jobs:
         uses: ./
         with:
           nvdaInstallDir: ${{ matrix.nvdaInstallDir }}
-      - run: Get-ChildItem $env:USERPROFILE\nvda
+      - run: Get-ChildItem D:\a\setup-action\setup-action\nvda
