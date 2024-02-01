@@ -49,10 +49,10 @@
     semver "^7.3.8"
     shelljs "^0.8.5"
 
-"@guidepup/setup@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.15.0.tgz#a8c2b9451b7085c5b839129f3b65ac1649ea1a39"
-  integrity sha512-nrbmF6qXD5IftLaZ1jBYZzDSU+yhpzPPNfDrtF1xQPa0GdGGhVHMoX63jCz6laIRNBIHHR5vyI0NtGSOB70jXA==
+"@guidepup/setup@^0.15.1":
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.15.1.tgz#66aa64611e2b42f0e26ac05768c1624c5e8e8f3f"
+  integrity sha512-FkTmyrnpvtoPCGXKdjdVWGu0KtHJg/KST2spjU9EJhj50S0wMyeLNfgMQ6k8tSQN4zY0d/a1Avh8A9N4bPQm/w==
   dependencies:
     "@guidepup/guidepup" "^0.22.0"
     chalk "^4.0.0"

@@ -1,0 +1,74 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 0 1 * *" # 1 day of every month
+
+jobs:
+  test-macos:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-11, macos-12, macos-13]
+        record: [true, false]
+        ignoreTccDb: [true, false]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Guidepup Setup
+        uses: ./
+        with:
+          record: ${{ matrix.record }}
+          ignoreTccDb: ${{ matrix.ignoreTccDb }}
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: artifacts
+          path: |
+            **/recordings/**/*
+
+  test-macos-14:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-14]
+        record: [true, false]
+        ignoreTccDb: [true]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Guidepup Setup
+        uses: ./
+        with:
+          record: ${{ matrix.record }}
+          ignoreTccDb: ${{ matrix.ignoreTccDb }}
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: artifacts
+          path: |
+            **/recordings/**/*
+
+  test-windows:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-2019, windows-2022]
+        nvdaInstallDir: ["", "%userprofile%\\nvda"]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Guidepup Setup
+        uses: ./
+        with:
+          nvdaInstallDir: ${{ matrix.nvdaInstallDir }}

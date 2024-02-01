@@ -20,7 +20,7 @@ inputs:
   ignoreTccDb:
     description: "Ignore TCC.db updates if not possible or required for your environment. Default is not to ignore. macos agents only."
     required: false
-    default: ""
+    default: false
   nvdaInstallDir:
     description: "Specify a custom location for where to install NVDA. Default is to install to a temporary directory. windows agents only."
     required: false

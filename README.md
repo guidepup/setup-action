@@ -60,7 +60,7 @@ If updating the TCC.db is not possible (due to SIP) or required you can skip the
 ```
 
 > [!NOTE]
-> If the necessary permissions have not been granted by other means, using this flag may result in your environment not being setup for reliable screen reader automation.
+> If the necessary permissions have not been granted by other means, using this flag may result in your environment not being set up for reliable screen reader automation.
 
 ### Windows
 
