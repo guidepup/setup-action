@@ -5,6 +5,8 @@ const exec = require("@actions/exec");
 
 async function main() {
   try {
+    console.log(os.platform);
+
     if (os.platform === "darwin") {
       // Fix for GitHub actions macos-11 screencapture not working
       // REF: https://github.com/actions/runner-images/issues/5960
