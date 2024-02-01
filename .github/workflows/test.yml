@@ -72,4 +72,4 @@ jobs:
         uses: ./
         with:
           nvdaInstallDir: ${{ matrix.nvdaInstallDir }}
-      - run: Get-ChildItem $env:USERPROFILE\nvda
+      - run: Get-ChildItem D:\a\setup-action\setup-action\nvda
