@@ -39,24 +39,32 @@
     http-response-object "^3.0.1"
     parse-cache-control "^1.0.1"
 
-"@guidepup/guidepup@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@guidepup/guidepup/-/guidepup-0.22.0.tgz#f3fc757c1f40dcf8920027c5dfeff2486a589686"
-  integrity sha512-AOXe7WaFdeY3Dwr/CKrq0aS6TAor9Jq8nz550i740z9yD3DqpJkEW4hYoU5HinbsMNGK2Iqzv5AcFfJixEiPoQ==
+"@guidepup/guidepup@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@guidepup/guidepup/-/guidepup-0.24.0.tgz#5739815d1979768afc4c6f128a4ac35c03ad4617"
+  integrity sha512-bbbcJPbZ01Zkxi+L51R4iI7iZ3b2ax3SocqAF0hCgS+Vax6TOft5eZJ37QWRSQM6Xis6OOEVlRhzpM2807WyiA==
   dependencies:
-    ffmpeg-static "^5.2.0"
     regedit "5.1.2"
     semver "^7.3.8"
     shelljs "^0.8.5"
 
-"@guidepup/setup@^0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.16.0.tgz#797ef8bd0c7be41381da447132efa62f4d892c94"
-  integrity sha512-Xsv9es+Qbs32TnEqz7BbAJj/Acfbd0bqzlgvqH7m8ECzshc0GljQy2Og5VWiymKjXNW+30NedHZ1VjViABesRQ==
+"@guidepup/record@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@guidepup/record/-/record-0.1.0.tgz#03acb4286aab208037a4d5ef65fc2f5615ce485f"
+  integrity sha512-jtSqZ0CZVdWzWIbLWHYoUi1IbNJVKns20oEYzwcTftw8rY5RXsK1OTXaXFx9Gup5mnmYaFLnON8WwTS+4DYwrQ==
   dependencies:
-    "@guidepup/guidepup" "^0.22.0"
+    ffmpeg-static "^5.2.0"
+
+"@guidepup/setup@^0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.19.0.tgz#2640fc038e141682ffeb4a343246751f6b3af126"
+  integrity sha512-t19JkRhWwoTyr7I0UXejQjnBDWXBOFd0kpFY8BaQWTPhgqeXkIa5LXNbNvqqJ08CPRpS3VGF+PzC3NrPFpyZEw==
+  dependencies:
+    "@guidepup/guidepup" "^0.24.0"
+    "@guidepup/record" "^0.1.0"
     chalk "^4.0.0"
     decompress "^4.2.1"
+    https-proxy-agent "^7.0.5"
     regedit "5.0.1"
     semver "^7.5.4"
 
@@ -71,6 +79,13 @@ agent-base@6:
   integrity sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==
   dependencies:
     debug "4"
+
+agent-base@^7.0.2:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-7.1.1.tgz#bdbded7dfb096b751a2a087eeeb9664725b2e317"
+  integrity sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==
+  dependencies:
+    debug "^4.3.4"
 
 ansi-styles@^4.1.0:
   version "4.3.0"
@@ -197,6 +212,13 @@ debug@4, debug@^4.1.0:
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
+
+debug@^4.3.4:
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
+  integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
+  dependencies:
+    ms "^2.1.3"
 
 decompress-tar@^4.0.0, decompress-tar@^4.1.0, decompress-tar@^4.1.1:
   version "4.1.1"
@@ -362,6 +384,14 @@ https-proxy-agent@^5.0.0:
     agent-base "6"
     debug "4"
 
+https-proxy-agent@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-7.0.5.tgz#9e8b5013873299e11fab6fd548405da2d6c602b2"
+  integrity sha512-1e4Wqeblerz+tMKPIq2EMGiiWW1dIjZOksyHWSUm1rmuvw/how9hBHZ38lAGj5ID4Ik6EdkOw7NmWPy6LAwalw==
+  dependencies:
+    agent-base "^7.0.2"
+    debug "4"
+
 ieee754@^1.1.13:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -442,6 +472,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+ms@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
+  integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 object-assign@^4.0.1:
   version "4.1.1"
