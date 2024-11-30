@@ -55,10 +55,10 @@
   dependencies:
     ffmpeg-static "^5.2.0"
 
-"@guidepup/setup@^0.19.1":
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.19.1.tgz#4fcbe433ea65f3fe5796e42b7ac0fa1c34081b35"
-  integrity sha512-UGDo2+6eXmcfAGJdaLVm+BV7PBmaLo02Gxw+6YIaXnlUMo2RtPtd/n200VEbtBgpft6gjCAPOofclJjuo2MFGQ==
+"@guidepup/setup@^0.19.2":
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.19.2.tgz#a0a9fa0dfdb7519f603b4278cc5ba48e4b77b147"
+  integrity sha512-5R6+egxYyx6i7bT/dW91bWYQgrgLf1oB7qHj6AWFvuVZNeqLBu2uTVcMlgd3c32CESQ0zJxQvhSYcMoGuKYNRg==
   dependencies:
     "@guidepup/guidepup" "^0.24.0"
     "@guidepup/record" "^0.1.0"
