@@ -18,9 +18,9 @@ jobs:
         ignoreTccDb: [true, false]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .nvmrc
       - name: Guidepup Setup
         uses: ./
         with:
@@ -41,9 +41,9 @@ jobs:
         nvdaInstallDir: ["", "D:\\a\\setup-action\\setup-action\\nvda"]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .nvmrc
       - name: Guidepup Setup
         uses: ./
         with:
