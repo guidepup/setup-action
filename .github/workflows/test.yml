@@ -17,7 +17,7 @@ jobs:
         record: [true, false]
         ignoreTccDb: [true, false]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
@@ -40,7 +40,7 @@ jobs:
         os: [windows-2019, windows-2022]
         nvdaInstallDir: ["", "D:\\a\\setup-action\\setup-action\\nvda"]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
