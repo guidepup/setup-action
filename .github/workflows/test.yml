@@ -38,7 +38,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-2022, windows-2025]
-        nvdaInstallDir: ["", "D:\\a\\setup-action\\setup-action\\nvda"]
+        nvdaInstallDir: ["", "C:\\a\\setup-action\\setup-action\\nvda"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
