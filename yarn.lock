@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@actions/core@^1.10.1":
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.10.1.tgz#61108e7ac40acae95ee36da074fa5850ca4ced8a"
-  integrity sha512-3lBR9EDAY+iYIpTnTIXmWcNbX3T2kCkAEQGIQx4NVQ0575nk2k3GRZDTPQG+vVtS2izSLmINlxXf0uLtnrTP+g==
+"@actions/core@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.11.1.tgz#ae683aac5112438021588030efb53b1adb86f172"
+  integrity sha512-hXJCSrkwfA46Vd9Z3q4cpEpHB1rL5NG04+/rbqW9d3+CSvtB1tYe8UTpAlixa1vj0m/ULglfEK2UKxMGxCxv5A==
   dependencies:
+    "@actions/exec" "^1.1.1"
     "@actions/http-client" "^2.0.1"
-    uuid "^8.3.2"
 
 "@actions/exec@^1.1.1":
   version "1.1.1"
@@ -55,10 +55,10 @@
   dependencies:
     ffmpeg-static "^5.2.0"
 
-"@guidepup/setup@^0.19.2":
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.19.2.tgz#a0a9fa0dfdb7519f603b4278cc5ba48e4b77b147"
-  integrity sha512-5R6+egxYyx6i7bT/dW91bWYQgrgLf1oB7qHj6AWFvuVZNeqLBu2uTVcMlgd3c32CESQ0zJxQvhSYcMoGuKYNRg==
+"@guidepup/setup@^0.19.3":
+  version "0.19.3"
+  resolved "https://registry.yarnpkg.com/@guidepup/setup/-/setup-0.19.3.tgz#9347c3eed4330d3e6425e03fc4a66b5c7ecb65f8"
+  integrity sha512-vfRCFfzJF9lqrxnOnlyHo9CkQInnI782opMDk6Wk64nPWHH88vDPhIljRYLZgzmN9UBsIhzJTjkTWEF2rH/cVQ==
   dependencies:
     "@guidepup/guidepup" "^0.24.0"
     "@guidepup/record" "^0.1.0"
@@ -746,11 +746,6 @@ util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
-
-uuid@^8.3.2:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
-  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 wrappy@1:
   version "1.0.2"

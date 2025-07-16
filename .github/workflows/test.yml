@@ -13,12 +13,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-12, macos-13, macos-14]
+        os: [macos-13, macos-14, macos-15]
         record: [true, false]
         ignoreTccDb: [true, false]
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Guidepup Setup
@@ -26,10 +26,10 @@ jobs:
         with:
           record: ${{ matrix.record }}
           ignoreTccDb: ${{ matrix.ignoreTccDb }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: artifacts
+          name: artifacts-${{ matrix.os }}-${{ matrix.record }}-${{ matrix.ignoreTccDb }}
           path: |
             **/recordings/**/*
 
@@ -37,11 +37,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-2019, windows-2022]
+        os: [windows-2022, windows-2025]
         nvdaInstallDir: ["", "D:\\a\\setup-action\\setup-action\\nvda"]
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Guidepup Setup
