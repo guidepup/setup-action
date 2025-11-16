@@ -13,14 +13,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-13, macos-14, macos-15]
+        os: [macos-14, macos-15, macos-26]
         record: [true, false]
         ignoreTccDb: [true, false]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version-file: .nvmrc
       - name: Guidepup Setup
         uses: ./
         with:
@@ -40,10 +40,10 @@ jobs:
         os: [windows-2022, windows-2025]
         nvdaInstallDir: ["", "C:\\a\\setup-action\\setup-action\\nvda"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version-file: .nvmrc
       - name: Guidepup Setup
         uses: ./
         with:
