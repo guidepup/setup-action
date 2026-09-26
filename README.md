@@ -1,3 +1,6 @@
+> [!NOTE]
+> This GitHub action is no longer supported. Please use the [`@guidepup/setup`](https://github.com/guidepup/setup) CLI directly.
+
 # Guidepup Setup Action
 
 <a href="https://github.com/guidepup/setup-action/blob/main/LICENSE"><img alt="Guidepup Setup Action uses the MIT license" src="https://img.shields.io/github/license/guidepup/setup-action" /></a>
